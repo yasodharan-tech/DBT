@@ -10,5 +10,6 @@ select
     COMMISSION_PCT,
     MANAGER_ID,
     DEPARTMENT_ID,
-current_timestamp from hr.src_employees
+current_timestamp as load_timestamp
+from hr.src_employees
 where SALARY >=10000
